@@ -16,3 +16,10 @@ export const getAllAnimeGirls = (req, res) => {
   res.json(animeGirls);
 
 }
+
+export const getRandomAnimeGirl = (req, res) => {
+
+  const randomNum = Math.floor(Math.random() * animeGirls.length);
+  res.json(animeGirls[randomNum]);
+
+}
